@@ -1,0 +1,15 @@
+1000.000000          | Tiempo de simulacion (mseg)
+1.000000          | Dt (mseg)
+6.600000          | Frecuencia
+1          | Tipo de Fuente, 1=Ricker,2=Gaussian
+100          | Iteraciones entre snapshots, -1=no snapshot printed
+1.000000          | Tiempo entre sismogramas (mseg)
+Archivo de velocidades:
+./vel.v3d
+Archivo de emisores:
+./emisores.in
+Archivo de receptores:
+./receptores.in
+Archivo de relacional:
+./relacional.in
+10          | Iteraciones entre mensajes

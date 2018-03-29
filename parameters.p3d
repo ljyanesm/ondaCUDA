@@ -1,0 +1,18 @@
+Directorio de los resultados:
+/home/intevep/cemvicc/terrasa/workspace/medium/cemviccMedium/ramirez4/propagation3d/
+Archivo de velocidades:
+vel.v3d
+Archivo de fuentes:
+emisores.in
+Archivo de receptores:
+receptores.in
+Archivo de relacional:
+relacional.in
+0          | Orden: 0 (2do), 1 (4to), 2 (6to), 3 (8vo)
+1000.000000          | Tiempo de simulacion (mseg)
+1.000000          | Dt (mseg)
+6.600000          | Frecuencia
+1          | Tipo de Fuente, 1=Ricker,2=Gaussian
+100          | Iteraciones entre snapshots, -1=no snapshot printed
+1.000000          | Tiempo entre sismogramas (mseg)
+10          | Iteraciones entre mensajes

@@ -1,0 +1,20 @@
+#!/bin/sh
+#PBS -V
+#PBS -l nodes=1:ppn=1:mpi
+#PBS -N seismultiGPU 
+#PBS -j oe
+#PBS -q batch
+
+# PLEASE NOTE: this script probably only works when submitting
+# a single serial (non-mpi) process to run on a single node --
+# you must specify the path to your application in the final rsh 
+# command below... and uncomment it!
+
+cd $PBS_O_WORKDIR
+NODE=`cat $PBS_NODEFILE`
+#echo Running serial job on node $NODE
+#echo REMEMBER to edit this batch file, batch.SERIAL!!
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH;
+export CUDA_PROFILE=1;
+rsh $NODE "cd /export/home/lyanez/propagation3d; ./seis3D_2orden_multiGPU input.in 1"
+
